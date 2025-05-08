@@ -2,112 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para Ti 💖</title>
+  <title>Para Ti 💌</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to top right, #ffe0f0, #ffe8f8);
-      font-family: 'Segoe UI', sans-serif;
+      background: #ffeaf4;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      overflow: hidden;
+      font-family: sans-serif;
     }
-
-    .card {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    .container {
       text-align: center;
-      max-width: 400px;
-      position: relative;
-      animation: float 3s ease-in-out infinite;
     }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .heart {
-      width: 100px;
-      height: 90px;
-      background-color: red;
-      position: absolute;
-      top: -50px;
-      left: calc(50% - 50px);
-      transform: rotate(-45deg);
-      animation: heartbeat 1s infinite;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      width: 100px;
-      height: 90px;
-      background-color: red;
-      border-radius: 50%;
-      position: absolute;
-    }
-
-    .heart::before {
-      top: -50px;
-      left: 0;
-    }
-
-    .heart::after {
-      left: 50px;
-      top: 0;
-    }
-
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1) rotate(-45deg); }
-      50% { transform: scale(1.2) rotate(-45deg); }
-    }
-
     h1 {
-      color: #ff69b4;
       font-size: 28px;
-      margin-bottom: 20px;
+      color: #ff4081;
     }
-
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-
-    .image {
+    button {
       margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
     }
-
-    .image img {
-      width: 200px;
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #888;
+    button:hover {
+      background-color: #e0356d;
     }
   </style>
 </head>
 <body>
-
-<div class="card">
-  <div class="heart"></div>
-  <h1>Te quiero mucho <span style="color:red; animation: heartbeat 1s infinite;"> ❤️ </span></h1>
-<p>
-  Porque cada momento a su lado soy la más feliz 
-</p>
-  <div class="image">
-    <img src="https://lumiere-a.akamaihd.net/v1/images/stitch_16x9_9ac13651.png?region=0,0,1152,648&width=600" alt="Stitch feliz">
+  <div class="container">
+    <h1>Hola mi amor 💖</h1>
+    <p>Tengo algo que mostrarte...</p>
+    <button onclick="location.href='index.html'">Haz clic para continuar 👉</button>
   </div>
-  <div class="footer"> Stich Feliz ❤️</div>
-</div>
-
 </body>
 </html>
-
